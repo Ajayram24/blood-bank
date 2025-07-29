@@ -1,237 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#FFFFFF">
+    android:layout_height="match_parent">
 
+    <!-- Fixed Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blood Unit Management"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <!-- Fixed Stats -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Blood Unit Management"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:drawableStart="@drawable/group"
-            android:drawableEnd="@drawable/group__1_"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:padding="16dp"
-            />
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!-- Total Units -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3">
+            android:layout_weight="1"
+            android:background="#FFDFDF"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:background="#FFDFDF"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_margin="1dp"
-                android:layout_width="10dp"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:text="2,456"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    android:layout_gravity="center"
-                    android:layout_height="20dp"
-                    android:layout_width="50dp"
-                    />
-
-                <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="wrap_content"
-                    android:text="Total Units"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="10dp"
-                android:layout_height="match_parent"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#EAF4FF"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="12dp">
-
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:gravity="center"
-                    android:text="3"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:gravity="center"
-                    android:text="Critical Alert"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:background="#FFF8E1"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="10dp"
-                android:layout_margin="4dp"
-                android:layout_width="10dp"
-                android:layout_height="match_parent">
-                <TextView
-                    android:drawableStart="@drawable/clip_path_group__6_"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_height="30dp"
-                    android:layout_width="30dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="2 min ago
-                    last update"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-
+            <TextView
+                android:text="2,456"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+            <TextView
+                android:text="Total Units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
         </LinearLayout>
-        <?xml version="1.0" encoding="utf-8"?>
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-                <GridLayout
-                    android:layout_width="370dp"
-                    android:layout_height="520dp"
-                    android:columnCount="2"
-                    android:rowCount="4"
-                    android:paddingStart="10dp"
-                    android:rowGap="10dp">
 
+        <!-- Critical Alert -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:background="#EAF4FF"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_row="0"
-                        android:layout_column="0"
-                        android:layout_columnWeight="0.1"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginBottom="15dp"
-                        android:background="@drawable/group_7"
-                        android:orientation="vertical"
-                        android:padding="16dp" />
+            <TextView
+                android:text="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="Critical Alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+        </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_columnWeight="0.1 "
-                        android:layout_marginTop="15dp"
-                        android:background="@drawable/group_6"
-                        android:orientation="vertical"
-                        android:layout_marginEnd="20dp"
+        <!-- Last Update -->
+        <LinearLayout
+            android:layout_weight="1"
+            android:background="#FFF8E1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
 
-                        android:padding="16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 min ago"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:text="last update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+        </LinearLayout>
 
+    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_columnWeight="1"
-                        android:background="@drawable/group_5"
-                        android:orientation="vertical"
-                        android:layout_marginBottom="15dp"
-                        android:layout_marginEnd="20dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="799dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/item_blood_unit" />
 
-                        android:padding="16dp" />
+    <!-- Fixed Bottom Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_columnWeight="1"
-                        android:background="@drawable/group_4"
-                        android:orientation="vertical"
-                        android:layout_marginEnd="20dp"
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#D32F2F"
+            android:text="Add Stock"
+            android:textColor="#FFFFFF"/>
 
-                        android:padding="16dp" />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#757575"
+            android:text="Update Units"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_columnWeight="1"
-                        android:background="@drawable/group_9"
-                        android:orientation="vertical"
-                        android:layout_marginBottom="15dp"
-                        android:layout_marginEnd="20dp"
-
-                        android:padding="16dp" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_columnWeight="1"
-                        android:background="@drawable/group_10"
-                        android:orientation="vertical"
-                        android:layout_marginEnd="20dp"
-
-                        android:padding="16dp" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_columnWeight="1"
-                        android:background="@drawable/group_8"
-                        android:orientation="vertical"
-                        android:layout_marginEnd="20dp"
-
-                        android:padding="16dp" />
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_columnWeight="1"
-                        android:background="@drawable/group_11"
-                        android:orientation="vertical"
-                        android:layout_marginBottom="15dp"
-                        android:layout_marginEnd="20dp"
-
-                        android:paddingEnd="16dp" />
-                </GridLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:layout_weight="1"
-                        android:backgroundTint="#D32F2F"
-                        android:text="Add Stock"
-                        android:textColor="#FFFFFF" />
-
-                    <Button
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:backgroundTint="#757575"
-                        android:text="Update Units"
-                        android:textColor="#FFFFFF" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-        </ScrollView>
+</LinearLayout>

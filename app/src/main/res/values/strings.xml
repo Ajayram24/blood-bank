@@ -4,4 +4,21 @@
     <string name="mark_all_as_read">Mark all as read</string>
     <string name="all">All</string>
     <string name="back">Back</string>
+    <string name="phone">phone</string>
+    <string name="_1_555_123_4567">1_555_123_4567</string>
+    <string name="email">email</string>
+    <string name="johnanderson_gmail_com">johnanderson_gmail_com</string>
+    <string name="location">location</string>
+    <string name="_123_medical_drive_boston">123_medical_drive_boston</string>
+    <string name="age">age</string>
+    <string name="_32_year">32_year</string>
+    <string name="weight">weight</string>
+    <string name="_72_kgr">72_kgr</string>
+    <string name="medical_condictions">medical_condictions</string>
+    <string name="none">none</string>
+    <string name="donate_now">Donate Now</string>
+    <string name="_2h_ago">2h ago</string>
+    <string name="b">b</string>
+    <string name="a">a</string>
+    <string name="A">A-</string>
 </resources>
