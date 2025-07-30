@@ -61,6 +61,18 @@
             android:name=".login"
             android:exported="false" />
         <activity
+            android:name=".user_signup"
+            android:exported="false" />
+        <activity
+            android:name=".user_login"
+            android:exported="false" />
+        <activity
+            android:name=".add_stock"
+            android:exported="false" />
+        <activity
+            android:name=".admin_donation_history"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

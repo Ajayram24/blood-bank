@@ -21,4 +21,6 @@
     <string name="b">b</string>
     <string name="a">a</string>
     <string name="A">A-</string>
+    <string name="email_or_phone_number">Email or Phone Number</string>
+    <string name="enter_your_password">Enter your password</string>
 </resources>
