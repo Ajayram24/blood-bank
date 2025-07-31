@@ -13,15 +13,6 @@
         android:theme="@style/Theme.BloodBank"
         tools:targetApi="31">
         <activity
-            android:name=".user_donation_history"
-            android:exported="false" />
-        <activity
-            android:name=".admin_notifications"
-            android:exported="false" />
-        <activity
-            android:name=".admin_add_blood"
-            android:exported="false" />
-        <activity
             android:name=".user_requeststatus"
             android:exported="false" />
         <activity

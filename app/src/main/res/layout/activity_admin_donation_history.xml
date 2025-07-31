@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search donors by name or blood group"
+        android:padding="12dp"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:layout_marginBottom="12dp"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:singleSelection="true"
+        app:chipSpacing="8dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipAllTime"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:text="All Time" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipLastMonth"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:text="Last Month" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipLast3Months"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:text="Last 3 Months" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/item_donor"
+        android:layout_height="match_parent"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+
