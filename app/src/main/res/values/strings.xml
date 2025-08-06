@@ -23,4 +23,8 @@
     <string name="A">A-</string>
     <string name="email_or_phone_number">Email or Phone Number</string>
     <string name="enter_your_password">Enter your password</string>
+    <string name="notificationss">Notifications</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="join_the_lifesaving_community">Join the lifesaving community</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
 </resources>

@@ -1,20 +1,5 @@
-package com.example.bloodbank
-
-import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-
-class user_bloodbanks : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_user_bloodbanks)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-    }
-}
+class BloodBankModel(
+    var name: String, var distance: String, var phone: String,
+    var openHours: String, var rating: Double, // 8 types: A+, A-, B+, B-, O+, O-, AB+, AB-
+    var bloodAvailability: BooleanArray
+)

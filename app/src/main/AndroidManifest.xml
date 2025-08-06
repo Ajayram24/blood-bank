@@ -13,6 +13,33 @@
         android:theme="@style/Theme.BloodBank"
         tools:targetApi="31">
         <activity
+            android:name=".RegisterUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserSignup"
+            android:exported="false" />
+        <activity
+            android:name=".UserLogin"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDonationHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_admin_donation_history"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateBloodStockActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserBloodBankActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BloodBank"
+            android:exported="false" />
+        <activity
+            android:name=".blood_bank_item"
+            android:exported="false" />
+        <activity
             android:name=".user_requeststatus"
             android:exported="false" />
         <activity

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/ic_facebook.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#3b5998"
+        android:pathData="M22,12c0,-5.5228 -4.4772,-10 -10,-10S2,6.4772 2,12c0,4.9915 3.657,9.1282 8.438,9.8767v-6.987h-2.54v-2.8897h2.54V9.7978c0,-2.5071 1.4929,-3.89 3.7774,-3.89 1.0946,0 2.2383,0.1956 2.2383,0.1956v2.46h-1.26c-1.2422,0 -1.6317,0.7717 -1.6317,1.5626v1.8744h2.7734l-0.4437,2.8897h-2.3297v6.987C18.343,21.1282 22,16.9915 22,12z"/>
+</vector>

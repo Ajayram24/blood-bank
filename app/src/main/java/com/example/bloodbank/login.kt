@@ -1,20 +1,49 @@
 package com.example.bloodbank
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.bloodbank.api.LoginRequest
+import com.example.bloodbank.api.RetrofitClient
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_login)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        setContentView(R.layout.activity_admin_login)
+
+        val emailField = findViewById<EditText>(R.id.editTextEmail)
+        val passwordField = findViewById<EditText>(R.id.editTextPassword)
+        val loginButton = findViewById<Button>(R.id.loginButton)
+
+        loginButton.setOnClickListener {
+            val email = emailField.text.toString().trim()
+            val password = passwordField.text.toString().trim()
+
+            val request = LoginRequest(identifier = email, password = password)
+
+            RetrofitClient.instance.login(request).enqueue(object : Callback<com.example.bloodbank.api.LoginResponse> {
+                override fun onResponse(
+                    call: Call<com.example.bloodbank.api.LoginResponse>,
+                    response: Response<com.example.bloodbank.api.LoginResponse>
+                ) {
+                    if (response.isSuccessful && response.body()?.status == true) {
+                        val name = response.body()?.data?.name ?: "User"
+                        Toast.makeText(this@login, "Welcome $name!", Toast.LENGTH_SHORT).show()
+                        // Navigate to next screen
+                    } else {
+                        Toast.makeText(this@login, "Login failed: ${response.body()?.message}", Toast.LENGTH_SHORT).show()
+                    }
+                }
+
+                override fun onFailure(call: Call<com.example.bloodbank.api.LoginResponse>, t: Throwable) {
+                    Toast.makeText(this@login, "Error: ${t.message}", Toast.LENGTH_LONG).show()
+                }
+            })
         }
     }
 }

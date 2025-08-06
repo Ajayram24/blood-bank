@@ -1,0 +1,17 @@
+// RetrofitClient.kt
+package com.example.bloodbank.api
+
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+
+object RetrofitClient {
+    private const val BASE_URL = "https://9w1nqxjw-80.inc1.devtunnels.ms/" // Change this to your actual IP if testing on device
+
+    val instance: ApiService by lazy {
+        Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(ApiService::class.java)
+    }
+}
