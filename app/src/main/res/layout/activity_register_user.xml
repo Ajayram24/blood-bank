@@ -90,8 +90,7 @@
                 <Spinner
                     android:id="@+id/spinnerBloodGroup"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:prompt="Select Blood Group" />
+                    android:layout_height="wrap_content" />
 
                 <EditText
                     android:id="@+id/etLastDonation"

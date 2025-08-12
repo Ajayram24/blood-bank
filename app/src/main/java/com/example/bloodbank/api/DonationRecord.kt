@@ -1,11 +1,11 @@
 package com.example.bloodbank.api
 
 data class DonationRecord(
-    val name: String,
-    val age: Int,
-    val bloodGroup: String,
-    val lastDonationDate: String,
-    val nextDonationDate: String,
-    val hospital: String,
-    val status: String // "Eligible" or "Waiting"
+    val donor_name: String,
+    val donor_age: Int,
+    val blood_group: String,
+    val last_donation_date: String,
+    val next_eligible_date: String,
+    val hospital_name: String,
+    val status: String
 )

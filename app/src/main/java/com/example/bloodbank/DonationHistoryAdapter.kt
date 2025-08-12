@@ -30,12 +30,12 @@ class DonationHistoryAdapter(private val donationList: List<DonationRecord>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = donationList[position]
-        holder.tvName.text = item.name
-        holder.tvAge.text = "${item.age} years"
-        holder.tvBloodGroup.text = item.bloodGroup
-        holder.tvLastDonation.text = "Last: ${item.lastDonationDate}"
-        holder.tvNextDonation.text = "Next: ${item.nextDonationDate}"
-        holder.tvHospital.text = item.hospital
+        holder.tvName.text = item.donor_name
+        holder.tvAge.text = "${item.donor_age} years"
+        holder.tvBloodGroup.text = item.blood_group
+        holder.tvLastDonation.text = "Last: ${item.last_donation_date}"
+        holder.tvNextDonation.text = "Next: ${item.next_eligible_date}"
+        holder.tvHospital.text = item.hospital_name
         holder.tvStatus.text = item.status
     }
 }

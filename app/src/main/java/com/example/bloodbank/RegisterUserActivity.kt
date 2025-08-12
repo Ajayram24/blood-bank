@@ -7,7 +7,6 @@ import android.widget.RadioGroup
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bloodbank.R
-import com.google.firebase.appdistribution.gradle.ApiService
 
 class RegisterUserActivity : AppCompatActivity() {
 
@@ -46,11 +45,7 @@ class RegisterUserActivity : AppCompatActivity() {
 
         val user = UserModel(name, dob, gender, phone, email, bloodGroup, lastDonation, address, city, state, zip)
 
-        ApiService.javaClass.k(user) { success, message ->
-            Toast.makeText(this, message, Toast.LENGTH_LONG).also(
-                block = TODO()
-            )
-        }
+
     }
 
     class UserModel(

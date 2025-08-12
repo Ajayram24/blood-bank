@@ -1,8 +1,10 @@
 package com.example.bloodbank
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bloodbank.api.LoginRequest
@@ -19,6 +21,12 @@ class login : AppCompatActivity() {
         val emailField = findViewById<EditText>(R.id.editTextEmail)
         val passwordField = findViewById<EditText>(R.id.editTextPassword)
         val loginButton = findViewById<Button>(R.id.loginButton)
+        val signupbtn = findViewById<TextView>(R.id.signup)
+
+
+        signupbtn.setOnClickListener {
+            startActivity(Intent(this@login,sign_in::class.java))
+        }
 
         loginButton.setOnClickListener {
             val email = emailField.text.toString().trim()
@@ -35,6 +43,7 @@ class login : AppCompatActivity() {
                         val name = response.body()?.data?.name ?: "User"
                         Toast.makeText(this@login, "Welcome $name!", Toast.LENGTH_SHORT).show()
                         // Navigate to next screen
+                        startActivity(Intent(this@login,admin_dashboard::class.java))
                     } else {
                         Toast.makeText(this@login, "Login failed: ${response.body()?.message}", Toast.LENGTH_SHORT).show()
                     }

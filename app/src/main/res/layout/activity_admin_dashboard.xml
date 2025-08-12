@@ -129,6 +129,7 @@
             android:layout_marginTop="8dp">
 
             <Button
+                android:id="@+id/addBlood"
                 android:text="Add Blood Unit"
                 android:backgroundTint="#F44336"
                 android:textColor="#FFF"
@@ -139,6 +140,7 @@
                 android:layout_columnWeight="1"/>
 
             <Button
+                android:id="@+id/managerequest"
                 android:text="Manage Requests"
                 android:backgroundTint="#2196F3"
                 android:textColor="#FFF"
@@ -159,6 +161,7 @@
                 android:layout_columnWeight="1"/>
 
             <Button
+                android:id="@+id/donationhistory"
                 android:text="Donation History"
                 android:backgroundTint="#9C27B0"
                 android:textColor="#FFF"
@@ -185,9 +188,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- Example Recent Activity -->
             <TextView
-                android:text="New blood donation received - 10 min ago"
+                android:text="New blood donation received -"
                 android:drawableEnd="@drawable/vector__1_"
                 android:backgroundTint="#EDEDED"
                 android:padding="8dp"
@@ -196,6 +198,10 @@
                 android:layout_marginBottom="6dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
 
 
             <TextView

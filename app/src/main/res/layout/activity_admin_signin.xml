@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="horizontal"
     android:orientation="vertical"
+    android:scrollbars="horizontal"
     tools:context=".sign_in">
 
 
@@ -17,22 +16,26 @@
         android:layout_gravity="center"
         android:drawableStart="@drawable/vector2"
         android:drawablePadding="10dp"
-        android:padding="30dp"
+        android:layout_marginTop="30dp"
         android:hint="Join BLOOD LINk"
+        android:padding="30dp"
         android:textSize="20sp"
         android:textStyle="bold" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:drawablePadding="10dp"
-        android:padding="1dp"
         android:layout_marginBottom="50dp"
+        android:drawablePadding="10dp"
         android:hint="Creat your hospital staff account"
+        android:padding="1dp"
         android:textSize="10sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
 
     <EditText
+        android:id="@+id/nameEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
@@ -40,11 +43,28 @@
         android:layout_marginBottom="20dp"
         android:background="@color/white"
         android:drawablePadding="10dp"
-        android:drawableStart="@drawable/vector3"
         android:hint="Full Name"
         android:paddingStart="15dp"
         android:paddingEnd="15dp" />
+
+
     <EditText
+        android:id="@+id/hospitalNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/vector3"
+        android:drawablePadding="10dp"
+        android:hint="Hospital Name"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp" />
+
+
+    <EditText
+        android:id="@+id/cityEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
@@ -52,84 +72,77 @@
         android:layout_marginBottom="20dp"
         android:background="@color/white"
         android:drawablePadding="10dp"
+        android:hint="City"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
         android:drawableStart="@drawable/vector_4"
+        android:drawablePadding="10dp"
         android:hint="Email Address"
         android:paddingStart="15dp"
         android:paddingEnd="15dp" />
+
     <EditText
+        android:id="@+id/phoneEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:background="@color/white"
-        android:drawablePadding="10dp"
         android:drawableStart="@drawable/vector_5"
+        android:drawablePadding="10dp"
         android:hint="Phone Number"
         android:paddingStart="15dp"
         android:paddingEnd="15dp" />
+
     <EditText
+        android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:background="@color/white"
-        android:drawablePadding="10dp"
         android:drawableStart="@drawable/vector_6"
+        android:drawablePadding="10dp"
         android:hint="Password"
         android:paddingStart="15dp"
         android:paddingEnd="15dp" />
 
     <EditText
+        android:id="@+id/confirmPassword"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="50dp"
         android:background="@color/white"
-        android:drawablePadding="10dp"
         android:drawableStart="@drawable/vector_6"
+        android:drawablePadding="10dp"
         android:hint="Confirm Password"
         android:paddingStart="15dp"
-        android:paddingEnd="15dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_gravity="center"
-        android:drawablePadding="10dp"
-        android:padding="1dp"
-        android:drawableStart="@drawable/vector7"
-        android:hint="I agree to the terms of serivce"
-        android:textSize="10sp"
-        android:paddingStart="15dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_gravity="center"
-        android:drawablePadding="10dp"
-        android:padding="1dp"
-        android:layout_marginBottom="50dp"
-        android:drawableStart="@drawable/vector7"
-        android:hint="I agree to the privacy policy"
-        android:textSize="10sp"
-        android:paddingStart="15dp"
-        />
-
+        android:paddingEnd="15dp" />
 
     <Button
+        android:id="@+id/registerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/button"
         android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="15dp"
-        android:text="Login"
+        android:background="@drawable/button"
+        android:text="SignUp"
         android:textColor="@color/white" />
 
 
-
-</LinearLayout >
+</LinearLayout>
