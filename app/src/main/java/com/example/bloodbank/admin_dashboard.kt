@@ -36,8 +36,25 @@ class admin_dashboard : AppCompatActivity() {
 
         }
 
+        binding.donorlist.setOnClickListener {
+            startActivity(Intent(this@admin_dashboard, DonorListActivity::class.java))
 
+        }
 
+        binding.btnInventory.setOnClickListener {
+            startActivity(Intent(this@admin_dashboard, BloodUnitManagementActivity::class.java))
+
+        }
+
+        binding.btnNotifications.setOnClickListener {
+            startActivity(Intent(this@admin_dashboard, admin_notifications::class.java))
+
+        }
+
+        binding.btnSettings.setOnClickListener {
+            startActivity(Intent(this@admin_dashboard, Adminprofile::class.java))
+
+        }
 
     }
 }

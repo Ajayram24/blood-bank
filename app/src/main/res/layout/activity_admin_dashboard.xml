@@ -17,7 +17,6 @@
             android:textColor="@color/black"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
-            android:drawableLeft="@drawable/group"
             android:layout_height="wrap_content"/>
 
         <TextView
@@ -46,42 +45,51 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:drawableStart="@drawable/clip_path_group__4_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/clip_path_group__4_"/>
+
+                <TextView
                     android:text="2,456"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     android:layout_gravity="center"
                     android:layout_height="20dp"
-                    android:layout_width="70dp"
+                    android:layout_width="40dp"
                     />
 
                 <TextView
-                    android:layout_width="89dp"
+                    android:layout_width="79dp"
                     android:layout_height="wrap_content"
-                    android:text="Active Donors"
+                    android:text="Units Availabe"
                     android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_weight="1"
-                android:background="#EAF4FF"
+                android:background="#C4D4F4"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:padding="12dp"
-                android:layout_margin="4dp"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:drawableStart="@drawable/clip_path_group__5_"
-                    android:text="1,892"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent"/>
+                android:layout_margin="1dp"
+                android:layout_width="10dp"
+                android:layout_height="match_parent">
 
                 <TextView
-                    android:layout_width="89dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/clip_path_group__5_"/>
+
+
+                <TextView
+                    android:text="1,892"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_height="20dp"
+                    android:layout_width="40dp"/>
+
+                <TextView
+                    android:layout_width="79dp"
+                    android:layout_height="20dp"
                     android:text="Active Donors"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -92,16 +100,21 @@
                 android:orientation="vertical"
                 android:gravity="center"
                 android:padding="12dp"
-                android:layout_margin="4dp"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content">
+                android:layout_margin="1dp"
+                android:layout_width="10dp"
+                android:layout_height="match_parent">
+
                 <TextView
-                    android:drawableStart="@drawable/clip_path_group__6_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/clip_path_group__6_"/>
+
+                <TextView
                     android:text="48"
-                    android:textSize="18sp"
+                    android:textSize="15sp"
                     android:textStyle="bold"
-                    android:layout_height="match_parent"
-                    android:layout_width="50dp"/>
+                    android:layout_height="20dp"
+                    android:layout_width="20dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -151,6 +164,7 @@
                 android:layout_columnWeight="1"/>
 
             <Button
+                android:id="@+id/donorlist"
                 android:text="Contact Donor"
                 android:backgroundTint="#4CAF50"
                 android:drawableTop="@drawable/clip_path_group__2_"
@@ -172,103 +186,265 @@
                 android:layout_columnWeight="1"/>
         </GridLayout>
 
-        <!-- Recent Activities -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:text="Recent Activities"
-            android:textSize="20sp"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+
 
         <LinearLayout
-            android:layout_marginTop="8dp"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:padding="16dp">
 
-            <TextView
-                android:text="New blood donation received -"
-                android:drawableEnd="@drawable/vector__1_"
-                android:backgroundTint="#EDEDED"
-                android:padding="8dp"
-                android:textColor="@color/black"
-                android:background="@color/white"
-                android:layout_marginBottom="6dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"/>
-
-
-            <TextView
-                android:text="Emergency blood request - 25 mins ago"
-                android:backgroundTint="#EDEDED"
-                android:padding="8dp"
-                android:drawableEnd="@drawable/vector__2_"
-                android:background="@color/white"
-                android:textColor="@color/black"
-                android:layout_marginBottom="6dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-
-            <TextView
-                android:text="Low stock alert for O- - 1 hour ago"
-                android:backgroundTint="#EDEDED"
-                android:padding="8dp"
-                android:drawableEnd="@drawable/vector__3_"
-                android:layout_marginBottom="6dp"
-                android:textColor="@color/black"
-                android:background="@color/white"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-
-            <TextView
-                android:text="Scheduled donation completed - 2 hours ago"
-                android:backgroundTint="#EDEDED"
-                android:padding="8dp"
-                android:layout_marginBottom="6dp"
-                android:textColor="@color/black"
-                android:drawableEnd="@drawable/vector__1_"
-                android:background="@color/white"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-
-        <!-- Critical Alerts -->
-        <TextView
-            android:layout_marginTop="20dp"
-            android:text="Critical Alerts"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:layout_width="100dp"/>
-
-        <TextView
-            android:text="Need O- at Central Hospital - 15 mins ago"
-            android:backgroundTint="#FFEBEE"
-            android:padding="8dp"
-            android:layout_marginTop="6dp"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <ScrollView
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-            <!-- Use a container like LinearLayout or ConstraintLayout inside -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp"/>
+                android:orientation="vertical">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recent Activities"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="#F9F9F9"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTintMode="src_in"
+                    android:clipToOutline="true">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New blood donation received"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10 mins ago"
+                            android:textSize="14sp"
+                            android:textColor="#888888" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="completed"
+                        android:textSize="12sp"
+                        android:textColor="#FFFFFF"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        android:background="@drawable/status_completed"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="#F9F9F9"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTintMode="src_in"
+                    android:clipToOutline="true">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Emergency blood request"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25 mins ago"
+                            android:textSize="14sp"
+                            android:textColor="#888888" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="pending"
+                        android:textSize="12sp"
+                        android:textColor="#FFFFFF"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        android:background="@drawable/status_pending"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="#F9F9F9"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTintMode="src_in"
+                    android:clipToOutline="true">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Low stock alert for O-"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 hours ago"
+                            android:textSize="14sp"
+                            android:textColor="#888888" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="critical"
+                        android:textSize="12sp"
+                        android:textColor="#FFFFFF"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        android:background="@drawable/status_critical"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:background="#F9F9F9"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTintMode="src_in"
+                    android:clipToOutline="true">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Scheduled donation completed"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2 hours ago"
+                            android:textSize="14sp"
+                            android:textColor="#888888" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="completed"
+                        android:textSize="12sp"
+                        android:textColor="#FFFFFF"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="4dp"
+                        android:background="@drawable/status_completed"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/border_box"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Inventory Button -->
+            <Button
+                android:id="@+id/btnInventory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Inventory"
+                android:textSize="10sp"
+                android:textColor="#444"
+                android:drawableTop="@drawable/ic_blackdrop"
+                android:background="@android:color/transparent" />
+
+            <!-- Notifications Button -->
+            <Button
+                android:id="@+id/btnNotifications"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Notifications"
+                android:textSize="10sp"
+                android:textColor="#444"
+                android:drawableTop="@drawable/notification"
+                android:background="@android:color/transparent" />
+
+            <!-- Settings Button -->
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Settings"
+                android:textSize="10sp"
+                android:textColor="#444"
+                android:drawableTop="@drawable/ic_settings"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
     </LinearLayout>
+
 </ScrollView>
 

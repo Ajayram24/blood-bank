@@ -7,8 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Fixed Header -->
     <TextView
+        android:id="@+id/bloodunit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Blood Unit Management"
@@ -116,6 +116,7 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/addstock"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -125,6 +126,7 @@
             android:textColor="#FFFFFF"/>
 
         <Button
+            android:id="@+id/updateunits"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

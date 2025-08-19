@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="#FFFFFF"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,15 +12,17 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:drawableStart="@drawable/vector2"
         android:drawablePadding="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+
         android:hint="Join BLOOD LINk"
         android:padding="30dp"
-        android:textSize="20sp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <TextView
@@ -30,7 +33,7 @@
         android:drawablePadding="10dp"
         android:hint="Creat your hospital staff account"
         android:padding="1dp"
-        android:textSize="10sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
 
@@ -41,7 +44,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/white"
+        android:drawableStart="@drawable/vector3"
+
+        android:background="@drawable/shap"
         android:drawablePadding="10dp"
         android:hint="Full Name"
         android:paddingStart="15dp"
@@ -55,8 +60,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/white"
-        android:drawableStart="@drawable/vector3"
+        android:background="@drawable/shap"
+        android:drawableStart="@drawable/ic_hospital"
         android:drawablePadding="10dp"
         android:hint="Hospital Name"
         android:paddingStart="15dp"
@@ -70,7 +75,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/white"
+        android:background="@drawable/shap"
         android:drawablePadding="10dp"
         android:hint="City"
         android:paddingStart="15dp"
@@ -83,7 +88,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/white"
+        android:background="@drawable/shap"
         android:drawableStart="@drawable/vector_4"
         android:drawablePadding="10dp"
         android:hint="Email Address"
@@ -97,7 +102,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/white"
+        android:background="@drawable/shap"
         android:drawableStart="@drawable/vector_5"
         android:drawablePadding="10dp"
         android:hint="Phone Number"
@@ -111,7 +116,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/white"
+        android:background="@drawable/shap"
         android:drawableStart="@drawable/vector_6"
         android:drawablePadding="10dp"
         android:hint="Password"
@@ -125,7 +130,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="50dp"
-        android:background="@color/white"
+        android:background="@drawable/shap"
         android:drawableStart="@drawable/vector_6"
         android:drawablePadding="10dp"
         android:hint="Confirm Password"
