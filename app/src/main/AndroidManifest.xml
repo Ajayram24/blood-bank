@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,11 +12,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.BloodBank"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
-
-        <activity android:name=".RoleSelectionActivity"
+        <activity
+            android:name=".UserSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoleSelectionActivity"
             android:exported="true"
             android:theme="@style/Theme.BloodBank">
             <intent-filter>
@@ -25,21 +31,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".UpdateBloodStockActivity"
             android:exported="false" />
         <activity
             android:name=".UserBloodBankActivity"
             android:exported="false" />
-
         <activity
             android:name=".user_requeststatus"
             android:exported="false" />
         <activity
             android:name=".user_requestblood"
             android:exported="false" />
-
         <activity
             android:name=".user_notification"
             android:exported="false" />
@@ -61,22 +64,18 @@
         <activity
             android:name=".sign_in"
             android:exported="false" />
-
         <activity
             android:name=".Adminprofile"
             android:exported="false" />
         <activity
             android:name=".login"
             android:exported="false" />
-
         <activity
             android:name=".AddBloodStockActivity"
             android:exported="false" />
-
         <activity
             android:name=".AdminDonationHistoryActivity"
             android:exported="false" />
-
     </application>
 
 </manifest>
