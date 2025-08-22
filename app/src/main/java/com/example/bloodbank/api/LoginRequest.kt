@@ -8,6 +8,7 @@ data class LoginRequest(
 data class HospitalData(
     val id: Int,
     val name: String,
+
     val mail: String,
     val phone: Long
 )
