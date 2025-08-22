@@ -36,6 +36,7 @@
                 android:layout_weight="1"/>
 
             <ImageView
+                android:id="@+id/notifications"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/notification"/>
@@ -189,6 +190,7 @@
                 android:focusable="true">
 
                 <ImageView
+                    android:id="@+id/history"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:src="@drawable/ic_history_white"
@@ -206,6 +208,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/bloodbank"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -509,6 +512,7 @@
                     android:gravity="center">
 
                     <ImageView
+                        android:id="@+id/home"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_home_red"/>
@@ -530,6 +534,7 @@
                     android:gravity="center">
 
                     <ImageView
+                        android:id="@+id/status"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_status"/>
@@ -551,6 +556,7 @@
                     android:gravity="center">
 
                     <ImageView
+                        android:id="@+id/request"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_requests"/>
@@ -572,6 +578,7 @@
                     android:gravity="center">
 
                     <ImageView
+                        android:id="@+id/profile"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_profile"/>

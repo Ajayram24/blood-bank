@@ -24,7 +24,7 @@ class RoleSelectionActivity : AppCompatActivity() {
         }
 
         binding.userButton.setOnClickListener {
-            startActivity(Intent(this@RoleSelectionActivity,UserLoginActivity::class.java))
+            startActivity(Intent(this@RoleSelectionActivity,user_login::class.java))
         }
 
 
