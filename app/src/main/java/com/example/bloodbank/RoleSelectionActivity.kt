@@ -23,6 +23,10 @@ class RoleSelectionActivity : AppCompatActivity() {
             startActivity(Intent(this@RoleSelectionActivity,login::class.java))
         }
 
+        binding.userButton.setOnClickListener {
+            startActivity(Intent(this@RoleSelectionActivity,UserLoginActivity::class.java))
+        }
+
 
     }
 }
