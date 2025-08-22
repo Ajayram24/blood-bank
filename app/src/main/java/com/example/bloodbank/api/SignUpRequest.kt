@@ -1,13 +1,14 @@
 package com.example.bloodbank.api
 
-data class UserRegisterRequest(
-    val fname: String,
+data class SignUpRequest(
+    val name: String,
     val dob: String,
     val gender: String,
     val phone: String,
-    val mail: String,
-    val blood_group: String,
-    val last_donation: String?,
+    val blood: String,
+    val email: String,
+    val bloodGroup: String,
+    val lastDonation: String,
     val address: String,
     val city: String,
     val state: String,

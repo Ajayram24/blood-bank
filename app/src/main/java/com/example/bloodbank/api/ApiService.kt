@@ -40,12 +40,12 @@ interface ApiService {
         @Query("hospital_id") hospitalId: Int
     ): Call<HistoryResponse>
 
-    @POST("user_login.php")
+    @POST("login.php")
     fun userLogin(@Body request: UserLoginRequest): Call<UserLoginResponse>
 
-    @POST("user_signup.php")
-    fun registerUser(@Body request: UserRegisterRequest): Call<UserRegisterResponse>
 
+    @POST("user_register.php")  // <-- use your actual PHP filename
+    fun registerUser(@Body request: SignUpRequest): Call<SignUpResponse>
 
 
 }

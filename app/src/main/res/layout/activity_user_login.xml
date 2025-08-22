@@ -34,24 +34,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <!-- Tab: Login/Sign Up -->
-        <LinearLayout
-            android:layout_height="48dp"
-            android:orientation="horizontal"
-            android:background="@drawable/bg_tab_selector"
-            android:padding="2dp"
-            android:layout_marginBottom="16dp">
-
-            <Button
-                android:id="@+id/btnLoginTab"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:text="Login"
-                android:background="@drawable/bg_selected_tab"
-                android:textColor="#FFFFFF" />
-
-        </LinearLayout>
 
         <EditText
             android:id="@+id/etEmail"
@@ -125,12 +107,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <TextView
+        <Button
+            android:id="@+id/signup"
             android:text="Sign up"
-            android:textColor="#E53935"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
+            android:backgroundTint="#E53935"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
     </LinearLayout>
+
 </ScrollView>
