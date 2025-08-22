@@ -15,6 +15,7 @@ import retrofit2.Response
 class sign_in : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_admin_signin)
 
         val nameEditText = findViewById<EditText>(R.id.nameEditText)

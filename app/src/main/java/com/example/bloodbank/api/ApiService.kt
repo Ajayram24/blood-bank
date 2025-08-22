@@ -40,9 +40,11 @@ interface ApiService {
         @Query("hospital_id") hospitalId: Int
     ): Call<HistoryResponse>
 
+    @POST("user_login.php")
+    fun userLogin(@Body request: UserLoginRequest): Call<UserLoginResponse>
 
-
-
+    @POST("user_signup.php")
+    fun registerUser(@Body request: UserRegisterRequest): Call<UserRegisterResponse>
 
 
 
